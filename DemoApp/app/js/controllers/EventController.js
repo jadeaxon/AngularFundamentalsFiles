@@ -7,7 +7,15 @@ eventsApp.controller('EventController', function ($scope) {
   $scope.event = {
     name: "AngularJS Bootcamp",
     date: "2018-07-24",
-    time: "10:00 AM"
+    time: "10:00 AM",
+    location: {
+      address: "Google HQ",
+      city: "Mountain View",
+      state: "CA",
+      country: "USA"
+
+    },
+    imageUrl: "/img/angularjs-logo.png"
   };
 
 });

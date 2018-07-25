@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/app.css" />
   </head>
-  <body>
+  <body ng-cloak>
     <div class="container">
       <div class="navbar">
         <div class="navbar-inner">
@@ -15,7 +15,9 @@
         </div>
       </div>
       <div ng-controller="EventController">
-        <img src="{{event.imageUrl}}" />
+        <!-- Using ng-src delays evaluation until the scope is initialized. -->
+        <!-- If you used normal src, you'd get a broken image for a while. -->
+        <img ng-src="{{event.imageUrl}}" />
         <div class="row">
           <div class="spann11">
             <div><strong>Name: </strong>{{event.name}}</div>

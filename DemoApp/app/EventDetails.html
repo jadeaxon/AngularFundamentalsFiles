@@ -8,10 +8,20 @@
   </head>
   <body>
     <div class="container">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <ul class="nav">
+          </div>
+        </div>
+      </div>
       <div ng-controller="EventController">
-        {{event.name}}<br />
-        {{event.date}}<br />
-        {{event.time}}<br />
+        <div class="row">
+          <div class="spann11">
+            <div><strong>Name: </strong>{{event.name}}</div>
+            <div><strong>Date: </strong>{{event.date}}</div>
+            <div><strong>Time: </strong>{{event.time}}</div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Load all the lib deps. -->

@@ -15,7 +15,18 @@ eventsApp.controller('EventController', function ($scope) {
       country: "USA"
 
     },
-    imageUrl: "/img/angularjs-logo.png"
+    imageUrl: "/img/angularjs-logo.png",
+    sessions: [
+      {
+        name: "Directives Masterclass"
+      },
+      {
+        name: "Scope isn't a mouthwash"
+      },
+      {
+        name: "Components R Us"
+      }
+    ]
   };
 
 });

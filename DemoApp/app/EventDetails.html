@@ -33,6 +33,12 @@
                   {{event.location.city}}<br />
                 </address>
               </div>
+
+              <hr />
+              <h2>Sessions</h2>
+              <ul class="thumbnails">
+                <li ng-repeat="session in event.sessions">{{session.name}}</li>
+              </ul>
             </div>
           </div>
         </div>
